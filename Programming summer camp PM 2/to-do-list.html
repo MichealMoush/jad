@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To-Do-list</title>
+        </head>
+        <body>
+            <h1>My To-Do's</h1>
+<input type = "text" id = "input">
+<button id = "addBtn">Add</button>
+<div id = "content"></div>
+<script>
+document.getElementById('content').innerHTML = localStorage.getItem('myList')
+document.getElementById('addBtn').addEventListener('click', function(){
+    var a = document.createElement('li')
+    a.innerHTML = document.getElementById('input').value
+
+var b = document.createElement('button')
+b.addEventListener('click', removeItem)
+b.innerHTML = "X"
+a.append(b)
+
+    document.getElementById('content').append(a)
+    localStorage.setItem('myList', document.getElementById('content').innerHTML)
+})
+function removeItem(){
+    this.parentNode.remove()
+}
+    </script>
+    </body>
+    </html>

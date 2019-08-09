@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!-- saved from url=(0081)file:///Users/tumobeirut/Desktop/Programming%20summer%20camp%20PM/to-do-list.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>To-Do-list</title>
+        </head>
+        <body>
+            <h1>My To-Do's</h1>
+<input type="text" id="input">
+<button id="addBtn">Add</button>
+<div id="content"><li>green</li><li>yyyt</li><li>yyyt</li><li>yyyt</li><li>yyyt</li><li>yyyt</li><li>yyyt</li><li>yyyt</li><li>gf</li><li>gf</li><li>gf</li><li>ujghj</li><li>ujghj</li><li>ujghj</li><li>   </li></div>
+<script>
+document.getElementById('content').innerHTML = localStorage.getItem('myList')
+document.getElementById('addBtn').addEventListener('click', function(){
+    var a = document.createElement('li')
+    a.innerHTML = document.getElementById('input').value
+    document.getElementById('content').append(a)
+    localStorage.setItem('myList', document.getElementById('content').innerHTML)
+})
+    </script>
+    
+    </body></html>

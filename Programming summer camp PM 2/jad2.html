@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>World of Cars</title>
+    </head>
+<style>
+    #bug{width: 700px;}
+    #honda{width : 700px;}
+    #picanto{width: 700px;}
+body{background-color: lightblue}
+p{font-family:Arial, Helvetica, sans-serif}
+</style>
+<body>
+<h1 id = "MyHeading">World Of Cars</h1>
+<input id = "input" type = "text"placeholder = "Choose color">
+<button id = "changeBtn">Change Color</button>
+<p>In my opinion, the fastest car in the world is called Hennesey Venom f5,it has over 2,000 horsepower, it opens 301mph/h, (484km/h),the Hennessey Venom is not popular because their are only 3 in the hole world.</p>
+    <img src = "hennessey venom f5.jpeg">
+    <p></p>
+    <img src = ".jpeg">
+    <p>The car that have the most technologies is BMW i8 it doesn't have fuel, it works on electricity, the price of this car is $148,000.</p>
+    <img src = "BMW i8.jpeg">
+    <p>The most expensive car is called "maybach", the price of this car is $8.5M.</p>
+    <img src = "maybach.jpeg">
+<p>Mercedes has so many types, but the fastest one is called mercedes "SLR".</p>
+    <img src = "slr.jpeg">
+    <p>The second fastest car in the world is "bugatti chiron", the speed for this car is(420km/h).</p>
+    <img id = "bug" src = "bugatti.jpeg">
+    <p>The cars that most of the people that use them are: mercedes, BMW, Honda, Toyota, Picanto,....</p>
+        <img id = "honda" src = "honda.jpeg">
+        <p></p>
+        <img src = "toyota.jpeg">
+        <p></p>
+        <img id = "picanto" src = "picanto.jpeg">
+<script>
+    document.getElementById('changeBtn').addEventListener('click', function(){
+    document.getElementById('changeBtn').style.color = document.getElementById("input").value;
+    })
+</script>
+</body>
+</html>
